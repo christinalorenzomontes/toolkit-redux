@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 export const pokemonSlice = createSlice({
  name: 'pokemon',
  initialState: {
-  page: 1,
+  page: 0,
   pokemons: [],
   isLoading: false,
  },
@@ -15,7 +15,8 @@ export const pokemonSlice = createSlice({
       console.log(action);
     }
   },
-})
+});
+
 
 // Action creators are generated for each case reducer function
 export const { startLoadingPokemons, setPokemons } = pokemonSlice.actions;
