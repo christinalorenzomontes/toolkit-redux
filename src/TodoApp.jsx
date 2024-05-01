@@ -7,6 +7,7 @@ export const TodoApp = () => {
   // const { data: todos = [], isLoading } = useGetTodosQuery();
   const { data: todo, isLoading } = useGetTodoQuery(todoId);
   
+  
   const nextTodo = () => {
     setTodoId( todoId + 1 );
   }
